@@ -1,0 +1,29 @@
+.reserved {
+	padding: 20px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        text-align: start;
+        margin-bottom: 0px;
+    }
+    &__subtitle {
+        margin-left: 50px;
+        font-family: $secondfont;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    &__button {
+        margin-top: 0;
+        border: 1px solid $text;
+        color: $text;
+        &::after {
+            background: $text;
+        }
+        &:hover {
+            color: $text;
+        }
+    }
+}

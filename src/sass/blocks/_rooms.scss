@@ -1,0 +1,39 @@
+.rooms {
+	padding: 20px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 416px;
+        height: 413px;
+        transition: all .2s;
+        transform: scale(1);
+        background-image: url(../img/rooms/Rooms-2.png);
+        &:nth-child(2) {
+            background-image: url(../img/rooms/Rooms-3.png);
+        }
+        &:nth-child(3) {
+            background-image: url(../img/rooms/Rooms-4.png);
+        }
+        &:hover {
+            transition: all .2s;
+            transform: scale(1.02);
+            box-shadow: 0 0 15px $text;
+        }
+    }
+    &__link {
+        display: block;
+        text-align: center;
+        letter-spacing: 3px;
+        line-height: 413px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 28px;
+        color: $accent;
+        &:hover {
+            color: $accent;
+        }
+    }
+}

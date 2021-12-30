@@ -1,0 +1,58 @@
+.button {
+	position: relative;
+	width: 334px;
+	border: 1px solid $accent;
+	text-align: center;
+	overflow: hidden;
+    span {
+        z-index: 3;
+    }
+    &::after {
+        background: $accent;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+    }
+    &:hover::after {
+        left: 120%;
+        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+
+.scroll {
+    &__btn {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        display: block;
+        background-color: $gold;
+        border: 1px solid $gold;
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+        transform: translateY(100px);
+        transition: transform .5s, opacity .3s, box-shadow .6s;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 99;
+        img {
+            width: 32px;
+	        height: 32px;
+        }
+        &:hover {
+            transition: all .2s;
+	        box-shadow: 0 0 50px $text;
+        }
+        &_show {
+            transform: translateY(0);
+	        opacity: 1;
+        }
+    }	
+}

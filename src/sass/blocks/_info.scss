@@ -1,0 +1,16 @@
+.info {
+	padding: 20px 0;
+    &__subtitle {
+        margin-bottom: 15px;
+        font-family: $secondfont;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    &__text {
+        margin-bottom: 20px;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+    }
+}

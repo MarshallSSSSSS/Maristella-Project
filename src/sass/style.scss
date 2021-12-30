@@ -1,0 +1,46 @@
+@import '../libs/bootstrap/css/bootstrap-grid.min.css';
+@import '../libs/bootstrap/css/bootstrap-reboot.min.css';
+@import '../libs/micromodal/micromodal.css';
+@import '../libs/SimpleAdaptiveSlider/simple-adaptive-slider.min.css';
+@import '../libs/aos/aos.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Fira+Sans+Condensed:wght@300;400&display=swap');
+
+@import 'base/mixins';
+@import 'base/variables';
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+::placeholder { color: $text; }
+::selection { background-color: $text; color: $accent; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: $firstfont;
+	font-size: $descr-text;
+	line-height: $lineheight;
+	color: $text;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+@import 'blocks/text';
+@import 'blocks/button';
+@import 'blocks/header';
+@import 'blocks/intro';
+@import 'blocks/info';
+@import 'blocks/rooms';
+@import 'blocks/reserved';
+@import 'blocks/about';
+@import 'blocks/gallery';
+@import 'blocks/maps';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/room';
+@import 'blocks/national-park';
+@import 'blocks/about-us';
+@import 'blocks/contacts';
